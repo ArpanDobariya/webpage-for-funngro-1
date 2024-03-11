@@ -1,0 +1,478 @@
+/* poiret-one-regular - latin */
+@font-face {
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poiret-one-v14-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/poiret-one-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/poiret-one-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/poiret-one-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/poiret-one-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/poiret-one-v14-latin-regular.svg#PoiretOne') format('svg'); /* Legacy iOS */
+  }
+/* jost-regular - latin */
+@font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/jost-v14-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/jost-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/jost-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/jost-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/jost-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/jost-v14-latin-regular.svg#Jost') format('svg'); /* Legacy iOS */
+  }
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Jost",sans-serif;
+}
+body{
+    background-color: black;
+}
+.d-flex{
+    display: flex;
+}
+.just{
+    justify-content: center;
+}
+.just1{
+    justify-content: space-between;
+}
+.ali{
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+.space{
+    padding-top: 100px;
+}
+
+/* ------------------------------------------------------------------------container top-------------------------------------------------------------------------- */
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.main-head{
+    margin-top: 45px;
+}
+.social ul li a i{
+    margin-right: 25px;
+    color: white;
+    transition: 0.5s;
+}
+
+.social ul li a i:hover{
+    color: #ffc107;
+    transform: rotateY(180deg);
+}
+.logo{
+    padding-left: 70px;
+}
+.cont-num a{
+    text-decoration: none;
+    color: #ffc107;
+    border: 1px #ffc107 solid;
+    font-size: 17px;
+    padding: 14px;
+    letter-spacing: 0.5px;
+    transition: 0.5s;
+}
+.cont-num a:hover{
+    background-color: #ffc107;
+    color: white;
+}
+
+/* ------------------------------------------------------------------------container bottom-------------------------------------------------------------------------- */
+.btm{
+    padding-top: 50px;
+}
+nav ul li{
+    font-size: 15px;
+    margin: 0px 21px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: 1s;
+}
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+    background-color: #ffc107;
+    transition: 0.5s;
+    z-index: 1;
+}
+nav ul li a:hover:after{
+    width: 35px;
+}
+
+.submenu{
+    background-color: white;
+    position: absolute;
+    top: 215px;
+    width: 115px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    z-index: 9;
+}
+.submenu ul li a{
+    color: black;
+}
+.submenu ul li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+nav ul li:hover .submenu{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ------------------------------------------------------------------------banner-------------------------------------------------------------------------- */
+.back-img{
+    background-image: url(../images/banner1.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+.banner-box{
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 145px;
+}
+h1{
+    color: white;
+    font-family: 'Poiret One';
+    font-size: 70px;
+}
+.banner-box button{
+    margin-top: 40px;
+    padding: 20px 40px;
+    background-color: #ffc107;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.5s;
+    border: 1px solid black;
+
+}
+.banner-box button:hover{
+    background-color: black;
+    color: #ffc107;
+    border: 1px solid #ffc107;
+}
+
+/* ------------------------------------------------------------------------info-------------------------------------------------------------------------- */
+.info-title{
+    height: 155px;
+}
+.info-title h3{
+    color: white;
+    font-family: 'Poiret One';
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+}
+.info-title h3::after{
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 320px;
+    width: 110px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #ffc107;
+}
+.title-main{
+    width: 780px;
+}
+
+.info-detail{
+    padding-left: 20px;
+}
+.info-img{
+    padding-left: 40px;
+}
+.info-detail h4{
+    color: #ffc107;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Poiret One';
+}
+.info-detail p{
+    color: white;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: 'Jost';
+}
+
+/* ------------------------------------------------------------------------FOR PRODUCT-------------------------------------------------------------------------- */
+.forproduct{
+    max-width: 1320;
+    margin: auto;
+}
+.product{
+    margin-left: 10px;
+}
+.pro{
+    position: relative;
+    overflow: hidden;
+}
+.pro img{
+    transition: 1s;
+}
+.pro .atk a{
+    color: black;
+    font-size: 20px;
+    font-family: 'Poiret One';
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.atk{
+    width: 424px;
+    height: 50px;
+    background-color: #ffc107;
+    position: absolute;
+    bottom: -45px;
+    left: 0px;
+    transition: 0.5s;
+    visibility: hidden;
+    cursor: pointer;
+}
+.pro img:hover{
+    transform: scale(1.1);
+}
+.pro:hover .atk{
+    position: absolute;
+    bottom: 0px;
+    visibility: visible;
+}
+.product h3{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Poiret One';
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+.product a{
+    color: #ffc107;
+    text-decoration: none;
+    font-family: 'Poiret One';
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
+/* ------------------------------------------------------------------------rating and rivew-------------------------------------------------------------------------- */
+.rnr-top h2{
+    color: white;
+    font-size: 40px;
+    font-family: 'Poiret One';
+    letter-spacing: 2px;
+}
+.rnr-btm{
+    border-top: 1px solid rgba(255, 255, 255, 0.337);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.337);
+    margin-top: 50px;
+}
+.r1{
+    border-right: 1px solid rgba(255, 255, 255, 0.337);
+}
+.r2{
+    border-right: 1px solid rgba(255, 255, 255, 0.337);
+}
+.rnr{
+    padding: 40px 46px 25px 46px ;
+}
+.rnr ul li i{
+    color: #ffc107;
+    letter-spacing: 10px;
+}
+.rnr p{
+    color: white;
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 35px;
+    font-family: 'Jost';
+
+}
+.rnr-name h3{
+    color: white;
+    padding-top: 10px;
+    padding-left: 25px;
+    font-family: 'Jost';
+    font-size: 16px;
+}
+
+/* ------------------------------------------------------------------------Blog-------------------------------------------------------------------------- */
+.blog-top{
+    max-width: 1320px;
+    padding: 60px;
+    margin: auto;
+}
+.blog-top h2{
+    color: white;
+    font-size: 40px;
+    font-family: 'Poiret One';
+    letter-spacing: 2px;
+}
+.blog-top a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    background: #ffc107;
+    font-size: 14px;
+    padding: 14px 30px;
+    letter-spacing: 0.5px;
+    transition: 0.5s;
+}
+.blog-top a:hover{
+    color: #ffc107;
+    background-color: black;
+    border: 1px solid #ffc107;
+}
+
+.blog-dtl{
+    height: 370px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.337);
+}
+.blog-dtl h3{
+    color: #ffc107;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    font-family: 'Poiret One';
+    letter-spacing: 2px;
+}
+.blog-dtl p{
+    color: white;
+    line-height: 20px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-family: 'Jost';
+}
+.blog-dtl a{
+    text-decoration: none;
+    color: #ffc107;
+    position: relative;
+    transition: 1s;
+    font-family: 'Jost';
+}
+.blog-dtl a::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    width: 85px;
+    height: 2px;
+    background-color: #ffc107;
+}
+
+/* ------------------------------------------------------------------------instagram-------------------------------------------------------------------------- */
+.insta{
+    margin-bottom: 80px;
+}
+.insta h2{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: 'Poiret One';
+    letter-spacing: 2px;
+}
+.insta a {
+    text-decoration: none;
+    color: #ffc107;
+    border: 1px solid #ffc107;
+    font-size: 17px;
+    padding: 14px 30px;
+}
+.insta a i{
+    margin-right: 6px;
+}
+.insta-photo a img{
+    margin: 0px 30px;
+    transition: 1s;
+}
+.insta-photo a img:hover{
+    transform: scale(1.1);
+}
+
+/* ------------------------------------------------------------------------footer-------------------------------------------------------------------------- */
+.footer-top{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.337);
+    margin-bottom: 60px;
+}
+.footer-nav{
+    padding-top: 30px;
+}
+
+
+.footer-social p{
+    color: white;
+    line-height: 30px;
+    font-family: 'Jost';
+}
+.f-soc-link{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.f-soc-link a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.337);
+    font-size: 17px;
+    padding: 14px 30px;
+    transition: 0.5s;
+}
+.f-soc-link a:hover{
+    color: #ffc107;
+    border: 1px solid #ffc1076f;
+}
+.f-soc-link a i{
+    margin-right: 8px;
+}
+
+
+.footer-loc-cont i{
+    color: white;
+    font-size: 25px;
+}
+.footer-loc-cont h4{
+    color: #ffc107;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-family: 'Poiret One';
+    letter-spacing: 2px;
+}
+.footer-loc-cont p{
+    color: white;
+    font-family: 'Jost';
+}
+.footer-loc-cont a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
